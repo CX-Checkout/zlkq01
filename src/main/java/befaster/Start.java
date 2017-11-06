@@ -3,7 +3,7 @@ package befaster;
 import befaster.runner.ClientRunner;
 import befaster.runner.ConfigNotFoundException;
 import befaster.runner.RunnerAction;
-import befaster.solutions.App;
+//import befaster.solutions.App;
 
 import static befaster.runner.CredentialsConfigFile.readFromConfigFile;
 import static befaster.runner.TypeConversion.asInt;
@@ -51,7 +51,7 @@ public class Start {
         ClientRunner.forUsername(readFromConfigFile("tdl_username"))
                 .withServerHostname("run.befaster.io")
                 .withActionIfNoArgs(RunnerAction.testConnectivity)
-                .withSolutionFor("checkout", p -> App.checkout(p[0]))
+//                .withSolutionFor("checkout", p -> App.checkout(p[0]))
                 .start(args);
     }
 
